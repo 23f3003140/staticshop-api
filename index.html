@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+<title>StaticShop API</title>
+<pre style="font-size:14px">
+📦 Your JSON API is live!
+🔗 Direct access: <a href="api.json">api.json</a>
+📊 Products: 20 | Categories: books, clothing, sports...
+</pre>
 <script>
-fetch('./api.json')
-  .then(r=>r.json())
-  .then(data=> {
-    document.body.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
-  });
+fetch('./api.json?v=1')
+.then(r=>r.json())
+.then(data=>document.title=`StaticShop API v${data.metadata.version}`);
 </script>
