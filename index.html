@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<script>
+fetch('./api.json')
+  .then(r=>r.json())
+  .then(data=> {
+    document.body.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+  });
+</script>
