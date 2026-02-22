@@ -26,9 +26,10 @@
     {"id": "prod-619b8c48-020", "name": "Standard Item 20", "category": "books", "price": 90.52, "stock": 72, "rating": 3.9}
   ],
   "aggregations": {
-    "books": {
-      "count": 5,
-      "inventoryValue": 170388.69
-    }
+    "books": {"count": 5, "inventoryValue": 170388.69},
+    "electronics": {"count": 4, "inventoryValue": 159453.42},
+    "clothing": {"count": 6, "inventoryValue": 110548.38},
+    "sports": {"count": 3, "inventoryValue": 87222.81},
+    "home": {"count": 2, "inventoryValue": 65616.75}
   }
 }
